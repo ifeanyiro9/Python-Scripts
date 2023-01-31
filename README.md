@@ -1,2 +1,2 @@
-# pythin_LUIT
+# python_LUIT
 Python Repo for LUIT
