@@ -12,7 +12,7 @@ for services in Fav_AWS_Services:
 print("The length of the Main AWS Services List is " + str(len(Main_AWS_Services)) + " and the Services in the list are: ")
 print(Main_AWS_Services)
 
-#Pop out two services from the Main_AWS_Services list
+#Pop out two services from the Main_AWS_Services list!!!
 Main_AWS_Services.pop(5)
 Main_AWS_Services.pop(8)
 print("")
