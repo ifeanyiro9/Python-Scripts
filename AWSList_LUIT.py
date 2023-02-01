@@ -5,8 +5,8 @@ Main_AWS_Services = []
 Fav_AWS_Services = ["DynamoDB", "Lambda", "RDS", "EC2", "S3", "Cognito", "IAM", "Cloudformation", "Athena", "RedShift"]
 
 #Append my favorite AWS Services to the Main_AWS_Services list
-for services in Fav_AWS_Services:
-    Main_AWS_Services.append(services)
+for service in Fav_AWS_Services:
+    Main_AWS_Services.append(service)
 
 #Print the length of the Main AWS Services List and list the services in the list
 print("The length of the Main AWS Services List is " + str(len(Main_AWS_Services)) + " and the Services in the list are: ")
