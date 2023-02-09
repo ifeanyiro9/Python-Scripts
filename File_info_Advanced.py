@@ -32,5 +32,5 @@ while exit == False: #keep program running
             print(*info, sep="\n")
             
     except: #catch unexpected errors
-        print("There was an issues processing your path, please try again with a correct path.")
+        print("There was an issue processing your path, please try again with a correct path.")
 
