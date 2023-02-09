@@ -16,7 +16,7 @@ def extract_info(path = '.'): #function to extract file info, defaulted to prese
 
 exit = False
 
-while exit == False: #keep program running
+while exit == False: #loop script untill user chooses to exit
     try:
         path = input("Type in a path or press 'Enter' for present working directory. (Type 'Exit' to exit the program): ") #give user option to choose path to get information from
         
