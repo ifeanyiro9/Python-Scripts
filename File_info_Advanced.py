@@ -28,7 +28,7 @@ while exit == False: #keep program running
             print(*info, sep="\n")
 
         else:
-            info = extract_info(path) #pass custom path
+            info = extract_info(path) #pass custom path to function
             print(*info, sep="\n")
             
     except: #catch unexpected errors
