@@ -7,10 +7,8 @@ instances = ec2_resource.instances.all()
 
 for instance in instances:
     instance_state = instance.state["Name"]
-    print(instance.id)
-    print(instance_state)
     
-  #  if instance_state == 'running':
-    #   responce = ec2_client.stop_instances(InstanceIds=[instance])
-       # print('Stopped your instance ' + str(instance))
+    if instance_state == 'running':
+        responce = instance.stop()
+        print('Stopped your instance ' + str(instance))
         
