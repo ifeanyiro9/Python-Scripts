@@ -1,9 +1,9 @@
 import boto3
 
-ec2_resource = boto3.resource('ec2')
-ec2_client = boto3.client('ec2')
+ec2_resource = boto3.resource('ec2') #Invoke the resource for EC2
 
-instances = ec2_resource.create_instances(
+instances = ec2_resource.create_instances( #method to create instances
+    #Arguements to launc EC2 Instances
     MinCount = 3,
     MaxCount = 3,
     ImageId = 'ami-0aa7d40eeae50c9a9',
@@ -19,4 +19,5 @@ instances = ec2_resource.create_instances(
         ]
     )
 
-print(instances)
+#Print results of created EC2 Instances
+print(len(instances), "Dev Instance Servers were created and the instances created were:\n", instances)
