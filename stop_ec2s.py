@@ -11,4 +11,3 @@ for instance in instances:
     if instance_state == 'running':
         responce = instance.stop()
         print('Stopped your instance ' + str(instance))
-        
