@@ -2,7 +2,7 @@ import boto3
 
 ec2_resource = boto3.resource('ec2') #Invoke the resource for EC2
 
-instances = ec2_resource.create_instances( #method to create instances
+instances = ec2_resource.create_instances( 
     #Arguments to launch EC2 Instances
     MinCount = 3,
     MaxCount = 3,
