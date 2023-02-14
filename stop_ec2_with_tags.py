@@ -12,4 +12,4 @@ for instance in instances: #interate through all intances
     for tag in instance.tags:
        if ("Dev Instance Server" == tag['Value']) & (instance_state == 'running'): #check if instance is running and if tag is is Dev Instance
           stop_instance = instance.stop() #Stop instance if condition is satisfied
-          print('Stopped your Dev instances ' + str(instance.id))
+          print('Stopped your Dev instance ' + str(instance.id))
