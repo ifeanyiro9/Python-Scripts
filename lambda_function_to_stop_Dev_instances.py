@@ -3,11 +3,9 @@ import boto3
 ec2_resource = boto3.resource('ec2', region_name='us-east-1')
 
 def lambda_handler(event, content):
-
     instances = ec2_resource.instances.all() #Create iterable of all Instances.
 
     for instance in instances: #interate through all intances
-    
         instance_state = instance.state["Name"] #get instance state
         tag = instance.tags #get instance tags
     
