@@ -20,4 +20,4 @@ instances = ec2_resource.create_instances(
     )
 
 #Print results of created EC2 Instances
-print(len(instances), "Dev Instance Servers were created and the instances created were:\n", instances)
+print(len(instances), "Dev Instance Servers were created and the instances IDs created were:\n", instances.id)
