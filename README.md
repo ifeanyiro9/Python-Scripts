@@ -6,5 +6,5 @@ Lambda Functions to accomplish simple quick tasks,
 Scripts to manipulate files on your local system,
 Labs or other Misc Scripts I've worked on to improve my Python skills or just to test new concepts.
 
-Thank you for checking it out! This is definately a work in progres, so let's keep working!
+Thank you for checking it out! This is definately a work in progress, so let's keep working!
 
