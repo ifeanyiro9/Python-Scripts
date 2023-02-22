@@ -1,5 +1,6 @@
 import json
 import boto3
+import os
 
 AMI = os.environ['AMI']
 INSTANCE_TYPE = os.environ['INSTANCE_TYPE']
