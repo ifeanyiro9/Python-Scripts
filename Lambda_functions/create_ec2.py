@@ -1,22 +1,30 @@
 import json
 import boto3
 
+AMI = os.environ['AMI']
+INSTANCE_TYPE = os.environ['INSTANCE_TYPE']
+KEY_NAME = os.environ['KEY_NAME']
+SUBNET_ID = os.environ['SUBNET_ID']
+NAME_VLAUE = os.environ['NAME_VALUE']
+ENV_VALUE = os.environ['ENV_VALUE']
+
+ec2_resource = boto3.resource('ec2') #Invoke the resource for EC2
 
 def lambda_handler(event, content):
-    ec2_resource = boto3.resource('ec2') #Invoke the resource for EC2
-   
+
     instances = ec2_resource.create_instances( 
         #Arguments to launch EC2 Instances
         MinCount = 3,
         MaxCount = 3,
-        ImageId = 'ami-0aa7d40eeae50c9a9',
-        InstanceType ='t2.micro',
-        KeyName = 'levelupkeypair',
+        ImageId = AMI,
+        InstanceType = INSTANCE_TYPE,
+        KeyName = KEY_NAME,
+        SubnetId = SUBNET_ID,
         TagSpecifications=[
             {
                 'ResourceType': 'instance',
-                'Tags': [{'Key': 'Name','Value': 'Dev Instance Server'}, 
-                {'Key': 'Environment','Value': 'Dev'}]
+                'Tags': [{'Key': 'Name','Value': NAME_VLAUE}, 
+                {'Key': 'Environment','Value': ENV_VALUE}]
             
             }
         ]
