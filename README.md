@@ -1,4 +1,4 @@
-# Python_LUIT
+# Python-Scripts
 Welcome to my Python Repo. Here we have a range of Python Scripts I've personally worked on.
 They include:
 AWS Boto3 Scripts manipulating AWS Services eg EC2 Instances or S3,
